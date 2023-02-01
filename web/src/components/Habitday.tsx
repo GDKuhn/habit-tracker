@@ -17,7 +17,6 @@ export function HabitDay(props: HabitProps) {
     <Popover.Root>
       <Popover.Trigger
         className={clsx("w-10 h-10  border-2  rounded-lg", {
-          "bg-violet-400 border-violet-300": completedPercentage === 100,
           "bg-violet-500 border-violet-400":
             completedPercentage >= 80 && completedPercentage < 100,
           "bg-violet-600 border-violet-500":
